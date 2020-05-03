@@ -2,7 +2,6 @@
 <html>
     <head>
         <title>web application</title>
-        <script type="text/javascript" src="jquery-3.3.1.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
@@ -10,26 +9,32 @@
         
             <div class="container">
                 <div>FORM</div>
-                <p>Please fill in your details and submit</p>
-                <form>
+                <img src="download.png">
+                <p>This is the <strong>GHANIAN AKAN NAMES</strong> they are given to new born children according to the day they are born.</p>
+                <p>Please fill in your details and submit to know your birhday.</p>
+        
+                    <form action="/action_page.php">
                     <label for="day">Day:</label><br>
                     <input type="text" id="day" name="day"><br>
-                    <label for="month">Month:</label><br>
-                    <input type="text" id="month" name="month">
 
-                    <form></form>
-                    <label for="year">Year:</label><br>
-                     <input type="text" id="year" name="year"><br>
-                  </form>
-                
-                <form action="/action_page.php">
+                    <label for="month">Month:</label><br>
+                    <input type="text" id="month" name="month"><br>
+                    
+                    <label for="year of birth">Year of birth:</label><br>
+                     <input type="text" id="year of birth" name="year of birth"><br>
+
+                  <p>Select the gender</p>
                 <input type="radio" id="male" name="gender" value="male">
                 <label for="male">Male</label><br>
+
                 <input type="radio" id="female" name="gender" value="female">
                 <label for="female">Female</label><br>
+                
                 <input type="submit" value="Submit">
                 <input type="reset">
                 </form>
                 </div>
+                <script src="myscripts.js"></script>
+                
     </body>
 </html>

@@ -3,14 +3,15 @@ p  {
     font-family: courier;
     font-size: 130%;
   }
-  submit{
-      color: blue ;
-  }
+  
   div{
-      margin-top: 50px;
+      margin-top: 100px;
       font-size: 110%;
   }
 body{
     text-align: center;
+    background-image: url("/CSS/images.png");
+    background-repeat: no-repeat;
+    margin: 10%;
     
 }
