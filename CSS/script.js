@@ -1,31 +1,36 @@
-// Bussiness logi
+// Bussiness logic
 var daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "saturday"];
 var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-//User interface logic
-function checkNames(){
+
+//user interface logic
+function getNames(){
     var day = parseInt(document.getElementById("day").value);
     var month = parseInt(document.getElementById("month").value);
-    var year = parseInt(document.getElementById("year").value)
-    var male = document.getElementById("male").value;
-    var female = document.getElementById("female").value;
-};
+    var year = parseInt(document.getElementById("year").value);
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
 
-if(day <= 0 || day >31){
-    alert("Put the valid day")
+if(day <= 0 || day > 31){
+    alert("Enter valid day")
 }
 else if(month <=0 || month >12 || (month == 2 && day > 29)){
-    alert("Put the valid month..")
-}
-
-var newDate = new Date(day + "/" + month + "/" + year);
-var d = getDay.getDay()
+    alert("Enter valid month..")
+};
+var a = Math.floor((14 - month) / 12)
+    
+    var y = year - a 
+                       
+    var m = month + 12 * a - 2
+    var d = (day + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(year / 400) + Math.floor((31 * m )/ 12)) % 7;
 
 if(male.checked == true){
-    alert("You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + maleNames);
-    document.getElementById("akan").innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + maleNames[d];
+    alert("You were born on " + daysOfTheWeek[d] + " your Akan name is: " + maleNames[d] );
+    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + maleNames[d] ;
 }
+
 else if(female.checked == true){
-    alert("You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + femaleNames);
-    document.getElementById("akan").innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + femaleNames[d];
+    alert("You were born on "  + daysOfTheWeek[d] +  " your Akan name is: " + femaleNames[d] );
+    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + femaleNames[d] ;
+}
 }

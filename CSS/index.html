@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>web application</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         
             <div class="container">
-                <div>FORM</div>
+                <div class="output">
+                <div><strong>FORM</strong></div>
                 <img src="download.png">
-                <p>This is the <strong>GHANIAN AKAN NAMES</strong> they are given to new born children according to the day they are born.</p>
-                <p>Please fill in your details and submit to know your birhday.</p>
+                    <p>This is the  <strong>GHANIAN AKAN NAMES</strong>  they are given to new born children according to the day they are born respectively.</p>
+                     <p>Please  <em>fill in your details and submit</em>  to know your birthday.</p>
         
-                    <form action="/action_page.php">
+                    <form>
                     <label for="day">Day:</label><br>
-                    <input type="text" id="day" name="day"><br>
+                    <input type="text" id="day" name="day" required><br>
 
                     <label for="month">Month:</label><br>
-                    <input type="text" id="month" name="month"><br>
+                    <input type="text" id="month" name="month" required><br>
                     
-                    <label for="year of birth">Year of birth:</label><br>
-                     <input type="text" id="year of birth" name="year of birth"><br>
+                    <label for="year">Year:</label><br>
+                     <input type="text" id="year" name="year" required><br>
 
                   <p>Select the gender</p>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
 
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                
-                <input type="submit" value="Submit">
-                <input type="reset">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                     <label for="female">Female</label><br>
+                    <button type="button" class="btn btn-primary" onclick="getNames()"> submit</button>
+                    
+                     <input type="reset" class="btn btn-primary" onclick="reset">
                 </form>
                 </div>
-                <script src="myscripts.js"></script>
+                <div class="dispaly">
+                    <h3 id="akan">
+                    </h3>
+                </div>
+                </div>
+                <script src="script.js"></script>
                 
     </body>
 </html>

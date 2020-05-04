@@ -2,6 +2,7 @@ p  {
     color: blueviolet;
     font-family: courier;
     font-size: 130%;
+    font-style: italic;
   }
   
   div{
@@ -10,8 +11,16 @@ p  {
   }
 body{
     text-align: center;
-    background-image: url("/CSS/images.png");
-    background-repeat: no-repeat;
-    margin: 10%;
+    background: burlywood;
     
+}
+img{
+    border-radius: 80%;
+    
+}
+
+#akan{
+    background-color: white;
+    color: blue;
+    font-style: italic;
 }
