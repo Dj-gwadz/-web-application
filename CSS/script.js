@@ -26,11 +26,11 @@ var a = Math.floor((14 - month) / 12)
 
 if(male.checked == true){
     alert("You were born on " + daysOfTheWeek[d] + " your Akan name is: " + maleNames[d] );
-    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + maleNames[d] ;
+    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + " and your Akan name is: " + maleNames[d] ;
 }
 
 else if(female.checked == true){
     alert("You were born on "  + daysOfTheWeek[d] +  " your Akan name is: " + femaleNames[d] );
-    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + "and your Akan name will be: " + femaleNames[d] ;
+    document.getElementById('akan').innerHTML = "You were born on " + daysOfTheWeek[d] + " and your Akan name is: " + femaleNames[d] ;
 }
 }
