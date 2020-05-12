@@ -12,7 +12,7 @@ It usually works better using WI-FI and more experienced.
 * calculation of days and months
 * giving submission of various dates
 ## Technologies Used
-* script - to collect data eg week days
+* Javascript - to collect data eg week days
 * CSS - to style web
 * HTML - structure web page
 ## contacts
